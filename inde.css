@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+nav .logo{
+    width: 120px;
+}
+nav img{
+    width: 70%;
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('./bgimg2.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px ;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.heading{
+    font-family: century;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.main h1{
+    color: black;
+}
+.heading span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+    color: white;
+}
+.btn{
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* about */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+#about .headings{
+    text-align: center;
+    font-size: 50px;
+    font-family: century;
+}
+#pic{
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+#pic img{
+    width: 300px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    flex: 1;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #017143;
+    font-weight: bold; position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    box-shadow: 2px 5px 15px 2px #666;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+#intro p{
+    font-weight: bold;
+}
+
+/* education */
+#container{
+    width: 100%;
+    padding: 5px 10%;
+    min-height: 10vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .row{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.education .title h1{
+    font-family: century;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px 0px 20px 30px;
+}
+.education .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+.education .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    box-shadow: 2px 5px 15px 2px #666;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.contents .box h2{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.education .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    top: 0;
+    background-color: red;
+    border: 2px solid white;
+}
+
+/* skills */
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+#skills h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.boxx .heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.roww{
+    display: flex;  
+}
+.boxx{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;   
+    border: 1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align: justify;
+    padding: 2px ;
+    border-radius: 15px;
+    background: linear-gradient(to top,#017143 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    font-weight: bold;
+    
+}
+.boxx:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px #017143;
+}
+
+/* contact */
+#contact{
+    margin-top: 50px;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./bgimg5.jpg);
+    background-size: cover;
+}
+#contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+#contact .content h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+#contact .content p{
+    
+    font-weight: 300;
+    color: #fff;
+}
+.containerr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.containerr .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerr .contactinfo .box  .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+}
+.icon-container {
+    display: flex;
+}
+.icon {
+    margin: 0 10px; 
+        width: 40px; 
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: white; 
+        color: #4B0082; 
+    font-size: 20px; 
+}
+.icon:hover{
+    background: yellow;
+    color: #4B0082;
+}
+
+.text p{
+    font-weight: 500;
+    color: white;
+}
+.text h3{
+    color: white;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    margin-top: 50px;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+} 
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+footer{
+    font-weight: bold;
+    color: white;
+    
+}
+@media (max-width:800px) {
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 35px;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .main h1{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: -16px;
+    }
+    #pic{
+        flex-direction: column;
+        align-items: center;
+    }
+    #pic img{
+        width: 475px;
+        height: 300px;
+    }
+    #intro h2{
+        text-align: center;
+        padding: 10px;
+    } 
+    .roww{
+        display: grid; 
+        margin-left: 50px;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .containerr{
+        flex-direction: column;
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+    }
+    .container .contactinfo{
+        margin-top: 40px;
+    }
+    .text p{
+        font-weight: 500;
+    }
+    .container .contactinfo,
+    .contactform{
+        width: 100%;
+        display: grid;
+    }
+}
